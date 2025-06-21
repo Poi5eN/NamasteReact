@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Using html  -->
+    <div class="root">
+        <!-- <h1>Hello World!</h1> -->
+    </div>
+
+    <!-- Using javascript -->
+    <script>
+        const root = document.querySelector('.root');
+        const h1 = document.createElement('h1');
+        h1.textContent = 'Hello World from JavaScript!';
+        root.appendChild(h1);
+    </script>
+
+    <!-- Using jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Injecting React CDN Links -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</body>
+
+</html>
