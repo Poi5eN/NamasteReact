@@ -1,0 +1,26 @@
+{
+  "name": "2-ignitingourapp",
+  "version": "1.0.0",
+  "description": "Igniting Our App",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel find.html"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "Poi5eN",
+    "gaurav"
+  ],
+  "author": "Poi5eN",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.15.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^6.26.2"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
