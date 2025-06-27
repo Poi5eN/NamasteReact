@@ -10,7 +10,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from "./components/Contact";
 import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
-import MenuItemDetails from "./components/MenuItemDetails"; // Added for individual item page
+import MenuItemDetails from "./components/MenuItemDetails";
 
 const styledCard = {
   backgroundColor: "#f8f8f8",
@@ -46,7 +46,6 @@ const appRouter = createBrowserRouter([
       { path: "/contact", element: <Contact />, errorElement: <Error /> },
       { path: "/cart", element: <Cart/>, errorElement: <Error /> },
       { path: "/restaurant/:resId", element: <RestaurantMenu/>, errorElement: <Error /> },
-      // Added route for individual menu item details
       { path: "/restaurant/:resId/item/:itemId", element: <MenuItemDetails/>, errorElement: <Error /> },
     ],
     errorElement: <Error />,

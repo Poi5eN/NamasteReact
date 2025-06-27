@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom"; // Added Link for navigation
 import Shimmer from "./Shimmer";
 import resList from "../utils/mockData";
 
-// CSS styles for the menu component
 const menuStyles = {
   container: {
     maxWidth: "800px",
@@ -79,7 +78,6 @@ const RestaurantMenu = () => {
 
   useEffect(() => {
     console.log("RestaurantMenu component mounted");
-    // Fetch restaurant data based on resId
     const restaurant = resList.find((res) => res.data.id === resId);
     setResInfo(restaurant ? restaurant.data : null);
   }, [resId]);
@@ -92,7 +90,6 @@ const RestaurantMenu = () => {
     );
   }
 
-  // Extract menu categories dynamically
   const menuCategories = resInfo.menu ? Object.keys(resInfo.menu) : [];
 
   return (
@@ -136,7 +133,7 @@ const RestaurantMenu = () => {
                   <div style={menuStyles.itemDetails}>
                     <h3 style={menuStyles.itemName}>{item.name}</h3>
                     <p style={menuStyles.itemPrice}>₹{item.price}</p>
-                    <p style={menuStyles.itemDescription}>{item.description}</p> {/* Fixed typo: menuFacet -> menuStyles */}
+                    <p style={menuStyles.itemDescription}>{item.description}</p>
                     <p style={item.isVeg ? menuStyles.itemVeg : menuStyles.itemNonVeg}>
                       {item.isVeg ? "Vegetarian" : "Non-Vegetarian"}
                     </p>

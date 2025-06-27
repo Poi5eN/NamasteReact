@@ -7,10 +7,6 @@ const Header = () => {
 
   console.log("Header Renders");
 
-
-  // No dependency => Called every time the component renders.
-  // Empty dependency array => Called only once when the component mounts.
-  // [reactBtn] => Called every time the reactBtn state changes.
   useEffect(() => {
     console.log("useEffect called");
   }, []);
@@ -24,7 +20,6 @@ const Header = () => {
       </div>
       <nav className="nav">
         <ul>
-          {/* Never Use a tag as it always reload and use LINK */}
           <li>
             <Link to="/" className="nav-link">Home</Link>
           </li>

@@ -1,10 +1,7 @@
-import { useRouteError } from "react-router-dom"; // Import to access route errors
+import { useRouteError } from "react-router-dom";
 
 const Error = () => {
-  // Use useRouteError to get the error object from react-router-dom
   const error = useRouteError();
-
-  // Safely access error message or provide a fallback
   const errorMessage = error?.message || "An unknown error occurred.";
 
   return (

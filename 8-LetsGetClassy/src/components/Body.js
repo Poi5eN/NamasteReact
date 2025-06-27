@@ -6,17 +6,9 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 
 const Body = () => {
-  // Always useState at the top of the component
-
   const [listOfRestaurants, setListOfRestaurants] = useState(resList);
   const [searchText, setSearchText] = useState("");
   const [filteredRestaurants, setFilteredRestaurants] = useState(resList);
-
-  // This is a bad practice, as it can lead to confusion and bugs.
-  // if(true){
-  //   const [state , setState] = useState("");
-  // }
-
   useEffect(() => {
     setFilteredRestaurants(listOfRestaurants);
   }, [listOfRestaurants]);
@@ -37,7 +29,6 @@ const Body = () => {
         <button
           className="filter-btn"
           onClick={() => {
-            // Logic to filter top rated restaurants
             const filteredList = listOfRestaurants.filter(
               (restaurant) => restaurant.data.avgRating >= 4.0
             );
@@ -49,7 +40,6 @@ const Body = () => {
           aria-label="Filter top rated restaurants"
           title="Filter top rated"
         >
-          {/* Sleek funnel icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
