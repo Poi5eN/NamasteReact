@@ -11,14 +11,6 @@ import Contact from "./components/Contact";
 import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import MenuItemDetails from "./components/MenuItemDetails";
-// import Grocery from "./components/Grocery";
-
-// Chunking
-// Code Splitting
-// Dynamic Bundling
-// Lazy Loading
-// On Demand Loading
-// Dynamic Importing
 
 const Grocery = lazy(() => import("./components/Grocery"));
 
