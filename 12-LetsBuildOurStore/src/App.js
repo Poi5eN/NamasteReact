@@ -34,9 +34,7 @@ const styledCard = {
 const AppLayout = () => {
   const [userInfo, setUserInfo] = useState();
 
-  // Authentication
   useEffect(() => {
-    // Make an Api call here to fetch data for example
     const data = {
       name: "Poi5eN",
     };
@@ -44,11 +42,8 @@ const AppLayout = () => {
   }, []);
 
   return (
-    // Default User Context
     <UserContext.Provider value={{ loggedInUser: userInfo, setUserInfo }}>
-      {/* User Poi5eN after Auth */}
       <div className="app">
-        {/* User Gaurav in this Context */}
         <UserContext.Provider value={{ loggedInUser: "Gaurav" }}>
           <Header />
         </UserContext.Provider>

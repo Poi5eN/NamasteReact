@@ -11,9 +11,6 @@ const Header = () => {
 
   const onlineStatus = useOnlineStatus()
 
-  // const data = useContext(UserContext)
-  // console.log(data)
-
 
   const {loggedInUser} = useContext(UserContext)
   console.log(loggedInUser)

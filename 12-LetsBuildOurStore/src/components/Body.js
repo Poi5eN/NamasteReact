@@ -115,13 +115,11 @@ const Body = () => {
             className="restaurant-link"
           >
 
-            {/* If the restaurant is promoted add promoted label to it */}
             {restaurant.data.promoted? (
               <RestaurantCardPromoted resObj={restaurant.data} />
             ):(
               <RestaurantCard resObj={restaurant.data} />
             )}
-            {/* <RestaurantCard resObj={restaurant.data} /> */}
           </Link>
         ))}
       </div>
