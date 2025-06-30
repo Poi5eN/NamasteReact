@@ -4,7 +4,7 @@
   "description": "Igniting Our App",
   "scripts": {
     "test": "jest",
-    "start": "parcel style.html"
+    "start": "parcel data.html"
   },
   "keywords": [
     "react",
