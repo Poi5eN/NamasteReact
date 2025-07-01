@@ -1,28 +1,25 @@
-REDUX
+TESTING
 
-ZUSTAND
+TYPES OF TESTING
+- Unit Testing
+- Integration Testing
+- End to End Testing(e2e)
 
-REACT REDUX
+MANUAL TESTING
 
-REDUX TOOLKIT
+AUTOMATED TESTING
 
-REDUX STORE
+UNIT TESTING
 
-REDUX STORE SLICES
+INTEGRATION TESTING
 
-SUBSCRIBING TO THE STORE
-Button => Dispatch(Action) => Reducer(Fn(Modifies)) => Slices(Store) => Selector => UIInterface(Display)
+E2E TESTING
 
-#FLOW FOR REDUX
-- Install @reduxjs/toolkit and react-redux
-- Build our Store
-- Connect Our App to the Store
-- Slices(cartSlice)
-- Dispatch(Actions)
-- Selector
+REACT TESTING LIBRARY
+npm install --save-dev @testing-library/react @testing-library/dom
 
-IMMER
+JEST
 
-REDUX DEVTOOLS
+JSDOM
 
-RTK QUERY
+DUNDER METHOD
